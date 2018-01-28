@@ -18,5 +18,12 @@ check out the [official documentation](https://wallabyjs.com/docs/index.html).
 By default, specs are meant to go in the `spec` folder with other relevant files under the `src` directory.
 This can be configured in the *wallaby.js* file.
 
+
+### generate png
+```bash
+npm run tests2png
+```
+There is png image generated in tmp/docs/img
+
 ### What about Karma?
 I will likely be adding a karma config soon or would gladly accept a pull request!

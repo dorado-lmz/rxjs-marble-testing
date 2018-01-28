@@ -16,6 +16,7 @@ global.expectObservable = marbleHelpers.expectObservable;
 global.expectSubscriptions = marbleHelpers.expectSubscriptions;
 
 const assertDeepEqual = marbleHelpers.assertDeepEqual;
+const diagramFunction = global.asDiagram;
 
 const glit = global.it;
 
@@ -31,7 +32,10 @@ global.it = function(description, cb, timeout) {
   }
 };
 
-global.it.asDiagram = function() {
+global.it.asDiagram = function(label) {
+  if (diagramFunction) {
+    return diagramFunction(label, global.it);
+  }
   return global.it;
 };
 

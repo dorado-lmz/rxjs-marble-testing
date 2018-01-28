@@ -1,0 +1,11 @@
+{
+    "spec_dir": "spec",
+    "spec_files": [
+        "test-spec.ts"
+    ],
+    "helpers": [
+        "ts-node.helper.js",
+        "helpers/tests2png/*.js",
+        "helpers/**/*.ts"
+    ]
+}

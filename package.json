@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Minimal marble testing setup with wallabyjs",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "tests2png": "mkdir -p ./tmp/docs/img && node unit.js"
+  },
   "keywords": [
     "rxjs",
     "marble-testing"
@@ -14,5 +16,13 @@
     "jasmine": "^2.4.1",
     "lodash.isequal": "^4.2.0",
     "rxjs": "^5.0.0-beta.2"
+  },
+  "dependencies": {
+    "color": "^3.0.0",
+    "gm": "^1.23.1",
+    "lodash": "^4.17.4",
+    "ts-node": "^4.1.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^2.6.2"
   }
 }
