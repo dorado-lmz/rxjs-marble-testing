@@ -68,7 +68,7 @@ function stringify(x) {
     .replace(/\\n/g, '\n');
 }
 
-beforeEach(function() {
+beforeAll(function() {
   jasmine.addMatchers({
     toDeepEqual: function(util, customEqualityTesters) {
       return {
@@ -94,7 +94,7 @@ beforeEach(function() {
 });
 
 afterEach(function() {
-  global.rxTestScheduler = null;
+  // global.rxTestScheduler = null;
 });
 
 (function() {

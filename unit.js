@@ -4,6 +4,6 @@ require('ts-node/register');
 
 jasmine.loadConfigFile('spec/support/jasmine.json');
 jasmine.configureDefaultReporter({
-    showColors: false
+    showColors: true
 });
 jasmine.execute();

@@ -5,6 +5,7 @@
     ],
     "helpers": [
         "ts-node.helper.js",
+        "helpers/tests2png/*.js",
         "helpers/**/*.ts"
     ]
 }
